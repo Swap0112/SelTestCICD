@@ -23,7 +23,9 @@ public class TestHelloMaven {
 		
 		//Implicit wait
 		
-		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+		
+		driver.manage().window().maximise();
 		
 		driver.close();
 	    
