@@ -34,6 +34,14 @@
                         <version>2.7</version>
                         <scope>test</scope>
                 </dependency>
+		
+		<dependency>
+                        <groupId>com.sun</groupId>
+                        <artifactId>tools</artifactId>
+                        <version>1.6</version>
+                        <scope>system</scope>
+                        <systemPath>C:\Program Files\Java\jdk-11.0.11\lib\tools.jar</systemPath>
+                 </dependency>
 
 
 	</dependencies>
