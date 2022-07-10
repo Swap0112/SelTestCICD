@@ -1,6 +1,4 @@
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -21,9 +19,7 @@ public class TestHelloMaven {
 		
 		driver.get("https://www.naukri.com/");
 		
-		//Implicit wait
-		
-		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+		//driver.manage().window().maximize();	
 		
 		driver.close();
 	    
