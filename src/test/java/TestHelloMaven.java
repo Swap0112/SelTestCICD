@@ -21,6 +21,8 @@ public class TestHelloMaven {
 		
 		//driver.manage().window().maximize();	
 		
+		//driver.manage().window().maximise();
+		
 		driver.close();
 	    
 	   						
