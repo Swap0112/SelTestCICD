@@ -56,6 +56,10 @@
 							<goals>
 								<goal>report</goal>
 							</goals>
+							<configuration>
+								<datafile>target/jacoco.exec</datafile>
+								<outputDirectory>target/my-reports </outputDirectory>
+							</configuration>
 						</execution>
 					</executions>
 				</plugin>
@@ -64,7 +68,13 @@
 		</pluginManagement>
 	</build>
 
-
+	<distributionManagement>
+		<repository>
+			<id>artifactory</id>
+			<name>Test_Hello_Maven</name>
+			<url>http://localhost:8081/artifactory/Test_Hello_Maven</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencies>
 
