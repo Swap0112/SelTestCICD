@@ -5,10 +5,7 @@
 	<groupId>TestHelloMaven</groupId>
 	<artifactId>TestHelloMaven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<properties>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
-	</properties>
+
 
 	<build>
 		<pluginManagement>
@@ -45,7 +42,7 @@
 				<plugin>
 					<groupId>org.jacoco</groupId>
 					<artifactId>jacoco-maven-plugin</artifactId>
-					<version>0.8.2</version>
+					<version>0.8.5</version>
 					<executions>
 						<execution>
 							<goals>
@@ -68,38 +65,43 @@
 	</build>
 
 
+
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.10.1</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.8</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.3.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/cobertura-maven-plugin -->
+
 		<dependency>
 			<groupId>org.codehaus.mojo</groupId>
 			<artifactId>cobertura-maven-plugin</artifactId>
 			<version>2.7</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
-			<groupId>io.fabric8</groupId>
-			<artifactId>kubernetes-server-mock</artifactId>
-			<version>3.1.8</version>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>com.sun</groupId>
-					<artifactId>tools</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>com.sun</groupId>
+			<artifactId>tools</artifactId>
+			<version>1.4.2</version>
 		</dependency>
+
 
 
 	</dependencies>
