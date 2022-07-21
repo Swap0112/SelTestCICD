@@ -6,8 +6,8 @@
 	<artifactId>TestHelloMaven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-
 	<build>
+
 		<pluginManagement>
 			<plugins>
 
@@ -68,6 +68,8 @@
 		</pluginManagement>
 	</build>
 
+
+
 	<dependencies>
 
 		<dependency>
@@ -96,7 +98,18 @@
 			<version>1.4.2</version>
 		</dependency>
 
-
-
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>DESKTOP-VM1LFPQ-releases</name>
+			<url>http://localhost:8082/artifactory/Test-Hello-Maven</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>DESKTOP-VM1LFPQ-snapshots</name>
+			<url>http://localhost:8082/artifactory/Test-Hello-Maven</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
