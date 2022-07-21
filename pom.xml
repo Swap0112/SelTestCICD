@@ -70,12 +70,16 @@
 
 	<distributionManagement>
 		<repository>
-			<id>artifactory</id>
-			<name>Test_Hello_Maven</name>
+			<id>central</id>
+			<name>DESKTOP-VM1LFPQ-releases</name>
 			<url>http://localhost:8082/artifactory/Test_Hello_Maven</url>
 		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>DESKTOP-VM1LFPQ-snapshots</name>
+			<url>http://localhost:8082/artifactory/Test_Hello_Maven</url>
+		</snapshotRepository>
 	</distributionManagement>
-
 	<dependencies>
 
 		<dependency>
